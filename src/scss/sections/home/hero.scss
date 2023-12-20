@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  padding-bottom: 48px;
+
+  &__background {
+    position: absolute;
+    top: -77%;
+    right: -14%;
+    z-index: -1;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+  }
+
+  &__information {
+    max-width: 545px;
+    &_subtitle {
+      margin-bottom: 24px;
+      color: #DF6951;
+      font-family: $text;
+      font-size: $fs-xl;
+      font-weight: $fw-bold;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    &_title {
+      position: relative;
+      margin-bottom: 30px;
+      color: #181E4B;
+      max-width: 545px;
+      font-family: $ff-title;
+      font-size: 84px;
+      font-weight: $fw-bold;
+      line-height: 1.06;
+      letter-spacing: -3.36px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        top: 25%;
+        right: -16%;
+        width: 385px;
+        height: 12px;
+        z-index: -1;
+        background-image: url("../../img/hero/decore.png");
+      }
+    }
+    &_description {
+      margin-bottom: 34px;
+      color: #5E6282;
+      font-family: $text;
+      font-size: $fs-md;
+      font-weight: $fw-medium;
+      line-height: 1.9;
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    &-find {
+      padding: 19px 26px;
+      color: $white;
+      text-align: center;
+      font-family: 'Google Sans', sans-serif;
+      font-size: $fs-lg;
+      font-weight: $fw-medium;
+      line-height: normal;
+      border-radius: 10px;
+      background: #F1A501;
+      box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+      cursor: pointer;
+    }
+    &-demo {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: #DF6951;
+      }
+      color: #686D77;
+      font-family: $text;
+      font-size: 17px;
+      font-weight: $fw-medium;
+      line-height: normal;
+      cursor: pointer;
+    }
+  }
+
+
+
+}
