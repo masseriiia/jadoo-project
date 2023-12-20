@@ -15,8 +15,9 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff-title	: 'Volkhov', sans-serif;
+$ff			: 'Google Sans', sans-serif;
+$text : 'Poppins', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -39,6 +40,7 @@ $lh-title	: 1.3;
 // Colors.
 $white	: #FFFFFF;
 $black	: #000000;
+$nave-blue: #14183E;
 
 // Others.
 $tr: 0.35s;

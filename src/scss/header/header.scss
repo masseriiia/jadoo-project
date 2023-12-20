@@ -1,0 +1,85 @@
+.header {
+  padding-top: 48px;
+  padding-bottom: 27px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 86px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    &_item > a {
+      color: #212832;
+      font-family: $ff;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+
+      &:hover {
+        color: #ffa453;
+      }
+    }
+  }
+
+  &__registration {
+    display: flex;
+    gap: 55px;
+
+
+    &_login {
+      color: var(--1st, #212832);
+      font-family: $ff;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transition: color ease-out $tr;
+
+      &:hover {
+        color: #ffa453;
+      }
+    }
+    &_password {
+      padding: 9px 22px;
+      color: #212832;
+      font-family: $ff;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: normal;
+      border-radius: 5px;
+      background: none;
+      border: 1px solid #212832;
+      cursor: pointer;
+      transition: all ease-out $tr;
+
+      &:hover {
+        color: #ffa453;
+        border: 1px solid #ffa453;
+      }
+    }
+    &_language {
+      color: var(--1st, #212832);
+      font-family: $ff;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+  }
+}
