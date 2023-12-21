@@ -1,0 +1,91 @@
+.category {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 61px;
+
+  &__background {
+    position: absolute;
+    right: 10%;
+    z-index: -1;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    color: #5E6282;
+    text-align: center;
+    font-family: $text;
+    font-size: $fs-lg;
+    font-weight: $fw-semibold;
+    line-height: normal;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    color: $nave-blue;
+    text-align: center;
+    font-family: $ff-title;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    z-index: 3;
+  }
+
+  &__item {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 36px;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+      cursor: pointer;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -13%;
+        left: -10%;
+        width: 100px;
+        height: 100px;
+        border-radius: 30px 0px 10px 0px;
+        background: #DF6951;
+        z-index: -1;
+      }
+    }
+
+    &_img {
+      margin-bottom: 29px;
+    }
+    &_title {
+      margin-bottom: 15px;
+      min-width: 190px;
+      color: #1E1D4C;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: $fs-xl;
+      font-weight: $fw-semibold;
+      line-height: normal;
+    }
+    &_description {
+      color:  #5E6282;
+      max-width: 181px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: $fw-medium;
+      line-height: 1.73;
+    }
+  }
+}
