@@ -1,0 +1,72 @@
+.testimonials {
+  padding-top: 100px;
+  padding-bottom: 106px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__question {
+    &_subtitle {
+      color: #5E6282;
+      font-family: $text;
+      font-size: $fs-lg;
+      font-weight: $fw-semibold;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &_title {
+      color: #14183E;
+      max-width: 409px;
+      font-family: $ff-title;
+      font-size: 50px;
+      font-weight: $fw-bold;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+
+  &__about {
+    padding: 35px;
+    position: relative;
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+
+    &_image {
+      position: absolute;
+      top: -10%;
+      left: -7%;
+      border-radius: 68px;
+    }
+
+    &_comment {
+      margin-bottom: 32px;
+      color: #5E6282;
+      max-width: 402px;
+      font-family: $text;
+      font-size: $fs-md;
+      font-weight: $fw-medium;
+      line-height: 2;
+    }
+
+    &_name {
+      margin-bottom: 5px;
+      color: #5E6282;
+      font-family: $text;
+      font-size: 18px;
+      font-weight: $fw-semibold;
+      line-height: normal;
+    }
+
+    &_location {
+      color: #5E6282;
+      font-family: $text;
+      font-size: $fs-sm;
+      font-weight: $fw-medium;
+      line-height: normal;
+    }
+  }
+}
