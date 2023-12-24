@@ -1,0 +1,31 @@
+.brands {
+  padding-top: 61px;
+  padding-bottom: 70px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 241px;
+    height: 140px;
+    border-radius: 10px;
+    background: $white;
+    cursor: pointer;
+    filter: grayscale(1);
+
+
+    &:hover {
+      transition: all ease-in-out 0.2s;
+      filter: grayscale(0);
+      box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    }
+  }
+
+
+}
