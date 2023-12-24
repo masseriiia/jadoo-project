@@ -1,5 +1,42 @@
+.swiper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-height: 400px;
+  min-width: 504px;
 
+  &-slide {
+    max-height: 400px;
+  }
 
-.swiper-slide {
-  max-height: 500px;
+  &-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+  }
+
+  &-pagination-bullet {
+    &-active {
+      transition: all ease $tr;
+      background-color: #39425D;
+    }
+  }
+
+  &-button {
+    transition: opacity ease $tr;
+
+    &-disabled {
+      opacity: 0.3;
+    }
+  }
+
+  &-pagination {
+    position: static;
+    display: flex;
+    gap: 26px;
+  }
+
+  &-slide-button-prev, &-slide-button-next {
+    cursor: pointer;
+  }
 }

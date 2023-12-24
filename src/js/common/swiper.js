@@ -1,11 +1,16 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'swiper';
+import { Navigation, Pagination} from 'swiper/modules';
 
 const initCatalogSlider = () => {
     new Swiper('.swiper', {
         direction: 'vertical',
-        loop: true,
         slidesPerView: 1,
+        spaceBetween: 50,
+        effect: "creative",
+        enteredSlides: true,
+        grabCursor: true,
+
+        modules: [Navigation, Pagination],
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
