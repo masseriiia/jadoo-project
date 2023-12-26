@@ -10,22 +10,54 @@
   }
 
   &__inner {
-    display: flex;
+    display: none;
     gap: 86px;
+
+    @media all and (min-width: 1200px) {
+      display: flex;
+    }
+
+    &.open__menu {
+      padding-top: 100px;
+      display: flex;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      background-color: $black;
+      z-index: 99;
+      overflow: hidden;
+
+      @media all and (min-width: 1200px) {
+        display: none;
+      }
+    }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
+
+    @media all and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 60px;
+    }
 
     &_item > a {
-      color: #212832;
+      color: #ffffff;
       font-family: $ff;
       font-size: 17px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       text-decoration: none;
+
+      @media all and (min-width: 1200px) {
+        color: #212832;
+      }
 
       &:hover {
         color: #ffa453;
@@ -35,19 +67,29 @@
 
   &__registration {
     display: flex;
-    gap: 55px;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
 
+    @media all and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 45px;
+    }
 
     &_login {
-      color: var(--1st, #212832);
+      color: #ffffff;
       font-family: $ff;
       font-size: 17px;
-      font-weight: 500;
+      font-weight: $fw-medium;
       line-height: normal;
       border: none;
       background: none;
       cursor: pointer;
       transition: color ease-out $tr;
+
+      @media all and (min-width: 1200px) {
+        color: #212832;
+      }
 
       &:hover {
         color: #ffa453;
@@ -55,10 +97,10 @@
     }
     &_password {
       padding: 9px 22px;
-      color: #212832;
+      color: #ffffff;
       font-family: $ff;
       font-size: 17px;
-      font-weight: 500;
+      font-weight: $fw-medium;
       line-height: normal;
       border-radius: 5px;
       background: none;
@@ -66,21 +108,31 @@
       cursor: pointer;
       transition: all ease-out $tr;
 
+      @media all and (min-width: 1200px) {
+        color: #212832;
+      }
+
       &:hover {
         color: #ffa453;
         border: 1px solid #ffa453;
       }
     }
     &_language {
-      color: var(--1st, #212832);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #ffffff;
       font-family: $ff;
       font-size: 17px;
-      font-weight: 500;
+      font-weight: $fw-medium;
       line-height: normal;
       border: none;
       background: none;
       cursor: pointer;
-    }
 
+      @media all and (min-width: 1200px) {
+        color: #212832;
+      }
+    }
   }
 }

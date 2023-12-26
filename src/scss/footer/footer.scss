@@ -5,10 +5,25 @@
   &__inner {
     margin-bottom: 86px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 82px;
+    gap: 32px;
     color: #000000;
+
+    @media all and (min-width: 471px) {
+      flex-direction: row;
+      align-items: start;
+    }
+
+    @media all and (min-width: 790px) {
+      gap: 62px;
+    }
+
+    @media all and (min-width: 1200px) {
+      gap: 82px;
+    }
   }
 
   &__rights {
@@ -44,18 +59,37 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 71px;
+    gap: 57px;
+
+    @media all and (min-width: 471px) {
+      flex-direction: row;
+    }
+
+    @media all and (min-width: 790px) {
+      gap: 65px;
+    }
+
+    @media all and (min-width: 1200px) {
+      gap: 71px;
+    }
   }
 
   &__item {
     &_subtitle {
       margin-bottom: 32px;
       font-family: $text;
+      text-align: center;
       font-size: 21px;
       font-style: normal;
       font-weight: $fw-bold;
       line-height: 124.5%;
+
+      @media all and (min-width: 471px) {
+        text-align: start;
+      }
 
       a {
         color: $black;
@@ -66,9 +100,14 @@
     &_link {
       margin-bottom: 13px;
       font-family: $text;
+      text-align: center;
       font-size: $fs-lg;
       font-weight: $fw-medium;
       line-height: 124.5%;
+
+      @media all and (min-width: 471px) {
+        text-align: start;
+      }
 
       a {
         color: #5E6282;
@@ -81,7 +120,12 @@
     &_socials {
       margin-bottom: 26px;
       display: flex;
+      justify-content: center;
       gap: 25px;
+
+      @media all and (min-width: 1200px) {
+        justify-content: start;
+      }
     }
     &_social {
       padding: 14px 17px;
@@ -101,15 +145,26 @@
       color: #5E6282;
       font-family: $text;
       font-size: $fs-xl;
+      text-align: center;
       font-weight: $fw-medium;
       line-height: 124.5%;
       letter-spacing: 0.1px;
+
+      @media all and (min-width: 1200px) {
+        text-align: start;
+      }
     }
 
     &_buttons {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 7px;
+
+      @media all and (min-width: 1200px) {
+        justify-content: start;
+      }
+
     }
 
     &_button {

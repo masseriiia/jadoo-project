@@ -1,6 +1,10 @@
 .hero {
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 28px;
+
+  @media all and (min-width: 790px) {
+    padding-bottom: 48px;
+  }
 
   &__background {
     position: absolute;
@@ -11,56 +15,100 @@
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     z-index: 3;
+
+    @media all and (min-width: 992px) {
+      flex-direction: row;
+    }
   }
 
   &__information {
     max-width: 545px;
     &_subtitle {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       color: #DF6951;
       font-family: $text;
       font-size: $fs-xl;
       font-weight: $fw-bold;
       line-height: normal;
       text-transform: uppercase;
+
+      @media all and (min-width: 460px) {
+        margin-bottom: 24px;
+      }
     }
     &_title {
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #181E4B;
       max-width: 545px;
       font-family: $ff-title;
-      font-size: 84px;
+      font-size: 40px;
       font-weight: $fw-bold;
       line-height: 1.06;
       letter-spacing: -3.36px;
 
-      &:after {
-        position: absolute;
-        content: '';
-        top: 25%;
-        right: -16%;
-        width: 385px;
-        height: 12px;
-        z-index: -1;
-        background-image: url("../../img/hero/decore.png");
+      @media all and (min-width: 460px) {
+        margin-bottom: 30px;
+      }
+
+      @media all and (min-width: 790px) {
+        font-size: 54px;
+      }
+
+      @media all and (min-width: 992px) {
+        font-size: 84px;
       }
     }
+
+    &_image {
+      position: absolute;
+      top: 26%;
+      right: -15%;
+      width: 385px;
+      height: 12px;
+      z-index: -1;
+
+      @media all and (min-width: 396px) {
+        top: 38%;
+      }
+
+      @media all and (min-width: 790px) {
+        top: 37%;
+        right: 10%;
+      }
+
+      @media all and (min-width: 992px) {
+        top: 25%;
+        right: -15%;
+      }
+    }
+
     &_description {
       margin-bottom: 34px;
       color: #5E6282;
       font-family: $text;
-      font-size: $fs-md;
+      font-size: $fs-sm;
       font-weight: $fw-medium;
       line-height: 1.9;
+
+      @media all and (min-width: 460px) {
+        font-size: $fs-md;
+      }
     }
   }
   &__button {
     display: flex;
     align-items: center;
-    gap: 44px;
+    flex-direction: column;
+    gap: 22px;
+
+    @media all and (min-width: 460px) {
+      flex-direction: row;
+      gap: 44px;
+    }
 
     &-find {
       padding: 19px 26px;
@@ -80,7 +128,7 @@
       align-items: center;
       gap: 21px;
 
-      div {
+      span {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -97,7 +145,4 @@
       cursor: pointer;
     }
   }
-
-
-
 }

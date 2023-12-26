@@ -1,12 +1,33 @@
 .trip {
-  padding-top: 93px;
-  padding-bottom: 100px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media all and (min-width: 790px) {
+    padding-top: 42px;
+    padding-bottom: 64px;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding-top: 93px;
+    padding-bottom: 100px;
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
+
+    @media all and (min-width: 790px) {
+      padding: 44px 62px;
+    }
+
+    @media all and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__information {
@@ -14,36 +35,59 @@
       margin-bottom: 15px;
       color: #5E6282;
       font-family: $text;
-      font-size: $fs-lg;
+      font-size: $fs-md;
       font-weight: $fw-semibold;
       line-height: normal;
+
+      @media all and (min-width: 460px) {
+        font-size: $fs-lg;
+      }
     }
 
     &_title {
-      margin-bottom: 31px;
+      margin-bottom: 22px;
       max-width: 511px;
       color: #14183E;
       font-family: $ff-title;
-      font-size: 50px;
-      font-style: normal;
-      font-weight: 700;
+      font-size: 28px;
+      font-weight: $fw-bold;
       line-height: normal;
       text-transform: capitalize;
+
+      @media all and (min-width: 790px) {
+        margin-bottom: 26px;
+        font-size: 42px;
+      }
+
+      @media all and (min-width: 1200px) {
+        margin-bottom: 31px;
+        font-size: 50px;
+      }
     }
   }
 
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 48px;
-    gap: 21px;
+    margin-bottom: 28px;
+    gap: 14px;
+
+    @media all and (min-width: 790px) {
+      margin-bottom: 32px;
+      gap: 16px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-bottom: 48px;
+      gap: 21px;
+    }
 
     &_title {
       margin-bottom: 5px;
       color:  #5E6282;
       font-family: $text;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: $fs-md;
+      font-weight: $fw-bold;
       line-height: 124.5%;
     }
 
@@ -52,11 +96,10 @@
       color: #5E6282;
       max-width: 327px;
       font-family: $text;
-      font-size: 16px;
-      font-weight: 400;
+      font-size: $fs-md;
+      font-weight: $fw-regular;
       line-height: 124.5%;
     }
-
     &:last-of-type {
     	margin-bottom: 0
     }

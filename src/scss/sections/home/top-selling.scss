@@ -1,6 +1,16 @@
 .top-selling {
-  padding-top: 61px;
-  padding-bottom: 93px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+
+  @media all and (min-width: 790px) {
+    padding-top: 28px;
+    padding-bottom: 64px;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding-top: 61px;
+    padding-bottom: 93px;
+  }
 
   &__subtitle {
     color: #5E6282;
@@ -12,14 +22,24 @@
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 32px;
     color: #14183E;
     text-align: center;
     font-family: $ff-title;
-    font-size: 50px;
+    font-size: 32px;
     font-weight: $fw-bold;
     line-height: normal;
     text-transform: capitalize;
+
+    @media all and (min-width: 790px) {
+      margin-bottom: 40px;
+      font-size: 42px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-bottom: 60px;
+      font-size: 50px;
+    }
   }
 
   &__items {

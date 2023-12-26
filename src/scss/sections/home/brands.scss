@@ -1,9 +1,21 @@
 .brands {
-  padding-top: 61px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 42px;
+
+  @media all and (min-width: 790px) {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding-top: 61px;
+    padding-bottom: 70px;
+  }
 
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
   }
 
@@ -12,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 241px;
+    max-width: 241px;
     height: 140px;
     border-radius: 10px;
     background: $white;

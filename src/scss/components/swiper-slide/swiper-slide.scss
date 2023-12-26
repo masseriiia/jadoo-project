@@ -1,9 +1,17 @@
 .swiper {
   display: flex;
   align-items: center;
-  padding: 20px;
+  flex-direction: column;
+  padding: 20px 0;
   max-height: 400px;
-  min-width: 504px;
+
+  @media all and (min-width: 498px) {
+    padding: 20px;
+  }
+
+  @media all and (min-width: 590px) {
+    flex-direction: row;
+  }
 
   &-slide {
     max-height: 400px;
@@ -11,8 +19,12 @@
 
   &-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 57px;
+
+    @media all and (min-width: 590px) {
+      flex-direction: column;
+    }
   }
 
   &-pagination-bullet {
@@ -37,6 +49,7 @@
   }
 
   &-slide-button-prev, &-slide-button-next {
+    z-index: 99;
     cursor: pointer;
   }
 }
