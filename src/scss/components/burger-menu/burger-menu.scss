@@ -11,6 +11,7 @@
       position: absolute;
       width: 100%;
       height: 3px;
+      z-index: 99;
       background-color: $black;
 
       &::after {
@@ -28,6 +29,7 @@
         width: 100%;
         height: 3px;
         bottom: -20px;
+        z-index: 99;
         background-color: $black;
       }
 

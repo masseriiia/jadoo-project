@@ -10,8 +10,14 @@ const setBurgerMenu = () => {
         } else {
             document.body.style.overflow = 'hidden'
         }
-
-
     })
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 1200) {
+            burgerMenu.classList.remove('burger__active')
+            headerList.classList.remove('open__menu')
+            document.body.style.overflow = 'scroll'
+        }
+    });
 }
 setBurgerMenu()
