@@ -53,7 +53,7 @@
   }
 
   &__item {
-    padding: 20px;
+    padding: 27px;
 
     @media all and (min-width: 498px) {
       padding: 30px;
@@ -61,7 +61,7 @@
   }
 
   &__about {
-    padding: 25px;
+    padding: 30px;
     position: relative;
     border-radius: 10px;
     max-height: 400px;
@@ -85,7 +85,7 @@
       color: #5E6282;
       max-width: 402px;
       font-family: $text;
-      font-size: $fs-sm;
+      font-size: $fs-xs;
       font-weight: $fw-medium;
       line-height: 2;
 

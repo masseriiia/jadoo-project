@@ -36,6 +36,9 @@
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &_logo {
       margin-bottom: 19px;
       color: #181E4B;
@@ -62,10 +65,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 57px;
+    gap: 32px;
 
     @media all and (min-width: 471px) {
       flex-direction: row;
+      gap: 57px;
     }
 
     @media all and (min-width: 790px) {
@@ -79,16 +83,26 @@
 
   &__item {
     &_subtitle {
-      margin-bottom: 32px;
+      margin-bottom: 22px;
       font-family: $text;
       text-align: center;
-      font-size: 21px;
+      font-size: $fs-md;
       font-style: normal;
       font-weight: $fw-bold;
       line-height: 124.5%;
 
       @media all and (min-width: 471px) {
         text-align: start;
+      }
+
+      @media all and (min-width: $md) {
+        margin-bottom: 26px;
+        font-size: $fs-lg;
+      }
+
+      @media all and (min-width: $xxl) {
+        margin-bottom: 32px;
+        font-size: 21px;
       }
 
       a {
@@ -101,12 +115,20 @@
       margin-bottom: 13px;
       font-family: $text;
       text-align: center;
-      font-size: $fs-lg;
+      font-size: $fs-sm;
       font-weight: $fw-medium;
       line-height: 124.5%;
 
       @media all and (min-width: 471px) {
         text-align: start;
+      }
+
+      @media all and (min-width: $md) {
+        font-size: $fs-md;
+      }
+
+      @media all and (min-width: $xxl) {
+        font-size: $fs-lg;
       }
 
       a {
@@ -127,6 +149,7 @@
         justify-content: start;
       }
     }
+
     &_social {
       padding: 14px 17px;
       border-radius: 50%;
@@ -169,11 +192,25 @@
 
     &_button {
       display: flex;
-      gap: 5px;
+      align-items: center;
+      gap: 10px;
       padding: 10px 17px;
-      border-radius: 17.5px;
+      max-width: 160px;
+      text-decoration: none;
+      border-radius: 30px;
       color: $white;
       background-color: $black;
+
+      p {
+        margin: 0;
+        max-width: 94px;
+        font-family: $text;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 124.5%;
+        letter-spacing: 0.1px;
+
+      }
     }
   }
 }

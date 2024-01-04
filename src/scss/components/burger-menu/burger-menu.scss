@@ -52,19 +52,20 @@
     }
   }
 }
-.burger__active > span {
-  height: 0;
-}
 
-.burger__active > span::after {
-  background-color: $white;
-  top: 10px;
-  transform: rotate(45deg);
-  transition: transform 0.2s ease-in-out;
-}
-.burger__active > span::before {
-  background-color: $white;
-  top: 10px;
-  transform: rotate(-45deg);
-  transition: transform 0.2s ease-in-out;
+.burger__active  {
+  span {
+    height: 0;
+    &:after {
+      background-color: $white;
+      transform: rotate(45deg);
+      transition: transform 0.2s ease-in-out;
+    }
+    &:before {
+      background-color: $white;
+      top: 10px;
+      transform: rotate(-45deg);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
 }

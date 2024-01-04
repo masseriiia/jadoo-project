@@ -19,7 +19,7 @@
 
   &__inner {
     position: relative;
-    padding: 34px 22px;
+    padding: 34px 35px;
     border-radius: 129px 20px 20px 20px;
     background: rgba(223, 215, 249, 0.2);
     overflow: hidden;
@@ -122,15 +122,26 @@
     }
 
     &_button {
-      padding: 22px 50px;
+      padding: 14px 28px;
       color: $white;
-      text-align: center;
       font-family: 'Open Sans';
       font-size: 17px;
       font-weight: 600;
       line-height: normal;
       border-radius: 10px;
       background:linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+
+      @media all and (min-width: 790px) {
+        padding: 16px 32px;
+      }
+
+      @media all and (min-width: 790px) {
+        padding: 18px 42px;
+      }
+
+      @media all and (min-width: 1200px) {
+        padding: 22px 50px;
+      }
     }
   }
 

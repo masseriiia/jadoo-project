@@ -122,12 +122,17 @@
       background: #F1A501;
       box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
       cursor: pointer;
+
+      &:hover {
+        transition: all ease-in-out $tr;
+        background: #ffb527;
+        box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.35);
+      }
     }
     &-demo {
       display: flex;
       align-items: center;
       gap: 21px;
-
       span {
         display: flex;
         align-items: center;
@@ -136,6 +141,10 @@
         height: 52px;
         border-radius: 50%;
         background-color: #DF6951;
+        &:hover {
+          transition: all ease-in-out $tr;
+          background-color: #ff876c;
+        }
       }
       color: #686D77;
       font-family: $text;
