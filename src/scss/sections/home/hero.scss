@@ -48,19 +48,26 @@
       font-size: 28px;
       font-weight: $fw-bold;
       line-height: 1.06;
-      letter-spacing: -3.36px;
+      letter-spacing: -1.36px;
 
       @media all and (min-width: 460px) {
         margin-bottom: 30px;
         font-size: 32px;
       }
 
+      @media all and (min-width: 534px) {
+        letter-spacing: -2.36px;
+        font-size: 46px;
+      }
+
       @media all and (min-width: 790px) {
-        font-size: 48px;
+        font-size: 54px;
+        letter-spacing: -2.36px;
       }
 
       @media all and (min-width: 992px) {
         font-size: 84px;
+        letter-spacing: -3.36px;
       }
     }
 
@@ -71,11 +78,6 @@
       width: 385px;
       height: 12px;
       z-index: -1;
-
-      @media all and (min-width: 535px) {
-        top: 75%;
-        right: 10%;
-      }
 
 
       @media all and (min-width: 790px) {

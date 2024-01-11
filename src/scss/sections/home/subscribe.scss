@@ -98,13 +98,11 @@
       width: 421px;
     }
     &_label {
-      padding-top: 25px;
-      padding-left: 31px;
-      padding-bottom: 25px;
+      padding: 18px 10px;
       display: flex;
       width: 100%;
       align-items: center;
-      gap: 14px;
+      gap: 5px;
       border-radius: 10px;
       background: $white;
 
@@ -118,6 +116,13 @@
         font-weight: 400;
         line-height: normal;
         border: none;
+      }
+
+      @media all and (min-width: $xl) {
+        padding-top: 25px;
+        padding-left: 31px;
+        padding-bottom: 25px;
+        gap: 14px;
       }
     }
 
