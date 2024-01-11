@@ -10,7 +10,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 32px;
-    color: #000000;
+    color: $black;
 
     @media all and (min-width: 471px) {
       flex-direction: row;
@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     &_logo {
       margin-bottom: 19px;
       color: #181E4B;
@@ -87,7 +88,6 @@
       font-family: $text;
       text-align: center;
       font-size: $fs-md;
-      font-style: normal;
       font-weight: $fw-bold;
       line-height: 124.5%;
 
@@ -134,6 +134,10 @@
       a {
         color: #5E6282;
         text-decoration: none;
+
+        &:hover {
+          color: #ffa453;
+        }
       }
     }
   }
@@ -151,17 +155,27 @@
     }
 
     &_social {
-      padding: 14px 17px;
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 41px;
+      height: 41px;
       border-radius: 50%;
       fill: $white;
       filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10));
       background-color: $white;
+      transition: all $tr ease-in-out ;
+
+      &:nth-child(2) {
+        width: 45px;
+        height: 45px;
+      }
 
       &:hover {
-        transition: all ease-in-out $tr;
         background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60.00000178813934deg, #C68BF0 106.09081864356995deg, #D164DA 153.7500035762787deg, #C963E8 221.24999284744263deg, #BFC2E8 258.75deg, #FFC999 288.7499928474426deg, #D0D8C9 315deg, #BAD0F1 334.13365602493286deg, #CED8CB 358.9677572250366deg, rgba(255, 255, 255, 0.00) 360deg);
         filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10));
       }
+
     }
 
     &_app {
@@ -209,7 +223,10 @@
         font-weight: 400;
         line-height: 124.5%;
         letter-spacing: 0.1px;
-
+        transition: all $tr ease-in-out ;
+      }
+      &:hover {
+        box-shadow: 4px 4px 8px 5px rgba(34, 60, 80, 0.2);
       }
     }
   }

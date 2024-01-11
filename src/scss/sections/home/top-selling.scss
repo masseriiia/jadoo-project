@@ -7,7 +7,7 @@
     padding-bottom: 64px;
   }
 
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: $xl) {
     padding-top: 61px;
     padding-bottom: 93px;
   }
@@ -16,9 +16,13 @@
     color: #5E6282;
     text-align: center;
     font-family: $text;
-    font-size: 18px;
+    font-size: $fs-md;
     font-weight: $fw-semibold;
     line-height: normal;
+
+    @media all and (min-width: $md) {
+      font-size: $fs-lg;
+    }
   }
 
   &__title {
@@ -26,17 +30,19 @@
     color: #14183E;
     text-align: center;
     font-family: $ff-title;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: $fw-bold;
-    line-height: normal;
-    text-transform: capitalize;
+
+    @media all and (min-width: 460px) {
+      font-size: 32px;
+    }
 
     @media all and (min-width: 790px) {
       margin-bottom: 40px;
       font-size: 42px;
     }
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $xl) {
       margin-bottom: 60px;
       font-size: 50px;
     }
@@ -89,32 +95,42 @@
     &_name {
       color: #5E6282;
       font-family: $text;
-      font-size: 18px;
-      font-style: normal;
+      font-size: $fs-md;
       font-weight: 500;
       line-height: 124.5%;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-lg;
+      }
     }
+
     &_price {
       color: #5E6282;
       font-family: $text;
-      font-size: 18px;
-      font-style: normal;
+      font-size: $fs-md;
       font-weight: 500;
       line-height: 124.5%;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-lg;
+      }
     }
+
     &_days {
       display: flex;
       gap: 11px;
     }
+
     &_time {
       color: #5E6282;
       font-family: $text;
-      font-size: 16px;
-      font-style: normal;
+      font-size: $fs-sm;
       font-weight: 500;
       line-height: 124.5%;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-md;
+      }
     }
-
-
   }
 }

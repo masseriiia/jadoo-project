@@ -25,7 +25,7 @@
     display: none;
     gap: 86px;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $xl) {
       display: flex;
     }
 
@@ -54,7 +54,7 @@
     align-items: center;
     gap: 50px;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $xl) {
       flex-direction: row;
       gap: 60px;
     }
@@ -67,7 +67,7 @@
       line-height: normal;
       text-decoration: none;
 
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: $xl) {
         color: #212832;
       }
 
@@ -83,7 +83,7 @@
     align-items: center;
     gap: 45px;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $xl) {
       flex-direction: row;
       gap: 45px;
     }
@@ -99,7 +99,7 @@
       cursor: pointer;
       transition: color ease-out $tr;
 
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: $xl) {
         color: #212832;
       }
 
@@ -120,7 +120,7 @@
       cursor: pointer;
       transition: all ease-out $tr;
 
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: $xl) {
         color: #212832;
       }
 
@@ -142,7 +142,7 @@
       background: none;
       cursor: pointer;
 
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: $xl) {
         color: #212832;
       }
     }

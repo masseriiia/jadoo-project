@@ -7,7 +7,7 @@
     padding-bottom: 80px;
   }
 
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: $xl) {
     padding-top: 100px;
     padding-bottom: 106px;
   }
@@ -33,20 +33,27 @@
     }
 
     &_title {
-      margin-bottom: 80px;
+      margin-bottom: 28px;
       color: #14183E;
       max-width: 409px;
       font-family: $ff-title;
-      font-size: 32px;
+      font-size: 28px;
       font-weight: $fw-bold;
       line-height: normal;
       text-transform: capitalize;
 
+      @media all and (min-width: 460px) {
+        margin-bottom: 32px;
+        font-size: 32px;
+      }
+
       @media all and (min-width: 790px) {
+        margin-bottom: 50px;
         font-size: 42px;
       }
 
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: $xl) {
+        margin-bottom: 80px;
         font-size: 50px;
       }
     }
@@ -65,11 +72,12 @@
     position: relative;
     border-radius: 10px;
     max-height: 400px;
-    min-width: 250px;
+    min-width: 240px;
     box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 
     @media all and (min-width: 498px) {
       padding: 35px;
+      min-width: 250px;
     }
 
     &_image {

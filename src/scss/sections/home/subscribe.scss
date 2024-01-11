@@ -127,9 +127,9 @@
       font-family: 'Open Sans';
       font-size: 17px;
       font-weight: 600;
-      line-height: normal;
       border-radius: 10px;
       background:linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+      cursor: pointer;
 
       @media all and (min-width: 790px) {
         padding: 16px 32px;
@@ -144,6 +144,4 @@
       }
     }
   }
-
-
 }
