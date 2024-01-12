@@ -102,6 +102,7 @@
       font-size: $fs-sm;
       font-weight: $fw-regular;
       line-height: 124.5%;
+      word-wrap: break-word;
 
       @media all and (min-width: $md) {
         font-size: $fs-md;
